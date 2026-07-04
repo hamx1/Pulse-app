@@ -54,7 +54,10 @@ export default function WorkoutScreen() {
       Alert.alert(
         '🏆 Congratulations!',
         'Workout completed! Great job! 💪',
-        [{ text: 'View Dashboard', onPress: () => router.push('/') }, { text: 'Stay Here', style: 'cancel' }]
+        [
+          { text: 'View Dashboard', onPress: () => router.push('/') },
+          { text: 'Stay Here', style: 'cancel' }
+        ]
       );
     } catch (error) {
       Alert.alert('Error', 'Failed to complete workout.');
